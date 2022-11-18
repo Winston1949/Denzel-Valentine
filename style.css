@@ -1,0 +1,344 @@
+/*********************************************************
+Site Global
+*********************************************************/
+
+.socials-container{
+  text-align: center;
+  font-size: 2em;
+}
+
+.socials-unordered-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-list-item{
+  display: inline;
+  padding: 10px;
+}
+
+.socials-link-item{
+  color: #b60b00;
+  text-decoration: none;
+}
+
+.socials-link-item:hover{
+  color: #fff;
+}
+
+/*********************************************************
+ENTER PAGE
+*********************************************************/
+
+/****** HOME PAGE BACKGROUND *****/
+
+.enter-page {
+ background-color: #000;
+}
+
+/****** HOME PAGE LOGO *****/
+.logo-container {
+    margin-top: 12%;
+    font-size: 21px;
+    text-align: center;
+
+
+}
+
+/****** HOME PAGE LOGO *****/
+
+#logo{
+
+}
+
+/****** HOME PAGE ENTER LINK *****/
+#enter-bttn{
+
+  font-family: 'Long Cang', cursive;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-size: 4em;
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/*********************************************************
+HOME PAGE
+*********************************************************/
+.home-body{
+
+   background-color: #000;
+
+}
+
+.navigation-container{
+
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 3em;
+
+}
+
+.navigation-unordered-list{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-item{
+  display: inline;
+  padding: 10px;
+
+}
+
+.navigation-link-item{
+  color: #b60b00;
+  text-decoration: none;
+}
+
+.navigation-link-item:hover{
+  color: #fff;
+}
+
+.home-page-logo-container{
+
+  margin-top: 12%;
+  font-size: 21px;
+  text-align: center;
+  font-size: 4em;
+
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/*********************************************************
+ MUSIC PAGE
+ *********************************************************/
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  filter: blur(3px);
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.art-container{
+
+  text-align: center;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+#art{
+border: solid;
+border-color: #ff0000;
+background-image: -webkit-linear-gradient(#dc0a00 0%,  #F9F9F7 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin: 0;
+-webkit-filter: drop-shadow(2px 2px 20px #ff0000);
+
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #ff0000;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.listen-container{
+  font-family: 'Long Cang', cursive;
+  text-align: center;
+  font-size:2em;
+  color: white;
+  margin-top: 1em;
+  filter: blur(.5px);
+  text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ff0000;
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  filter: blur(1px);
+}
+.music-page-socials-container{
+  text-align: center;
+  font-size: 2em;
+}
+
+.music-page-socials-unordered-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.music-socials-list-item{
+  display: inline;
+  padding: 10px;
+}
+
+.music-socials-link-item{
+  color: #b60b00;
+  text-decoration: none;
+}
+
+.music-socials-link-item:hover{
+  color: #fff;
+}
+
+/*********************************************************
+ABOUT PAGE
+*********************************************************/
+
+.about-container{
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+
+
+
+}
+
+.bio{
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+/*********************************************************   RESPONSIVE  *********************************************************/
+
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+/*** Enter Page ***/
+    .logo-container {
+      margin-top: 30%;
+      font-size: 21px;
+      text-align: center;
+      }
+
+    #logo {
+      width: 30em;
+      height: auto;
+      }
+
+  #enter-bttn {
+    font-size: 5em;
+      }
+/*** Home Page ***/
+
+
+  .home-page-logo-container {
+    margin-top: 23%;
+    font-size: 4em;
+      }
+
+  .socials-container {
+    margin-top: 35%;
+    font-size: 4em;
+      }
+
+/*** Music Page ***/
+
+  #art{
+    height: auto;
+    width: 45em;
+      }
+
+/*** Globally ***/
+  #site-pages-logo{
+    width: 10em;
+    height: auto;
+      }
+
+  .navigation-container{
+    font-size: 5em;
+      }
+
+  .listen-container {
+    font-size: 6em;
+      }
+
+  .music-page-socials-container {
+    text-align: center;
+    font-size: 6em;
+      }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
